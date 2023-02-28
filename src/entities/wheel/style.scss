@@ -1,0 +1,27 @@
+.wheel{
+	&__img{
+		width: 250px;
+		top: calc(50% + 50px) !important;
+    z-index: 1;
+	}
+	&__btns{
+		margin-top: 250px;
+		button{
+			scale: .8;
+			&:nth-child(2){
+				transform: scaleX(-1);
+				margin-left: 50px;
+			}
+		}
+	}
+	&pipeLeft{
+		transform: rotateY(90deg);
+		display: none;
+	}
+}
+.pipeLeft{
+	transform: rotateY(-180deg) translate(50%, -50%) !important;
+}
+.pipe{
+	width: 450px;
+}

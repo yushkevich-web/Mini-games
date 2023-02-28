@@ -1,0 +1,59 @@
+.locker{
+  &__img{
+    position: relative;
+    text-align: center;
+    position: absolute;
+    top: 45%; left: 50%;
+    transform: translate(-50%, -50%);
+    &-main{
+      width: 400px;
+    }
+    &-indicator{
+      width: 280px; height: 280px;
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+
+      border: 15px solid #C53D3D;
+      &.yellow{
+        border: 15px solid #A2C53D;
+      }
+    }
+    &-pipelock{
+      scale: .9;
+      position: absolute;
+      top: calc(50% - 80px); left: calc(50% - 30px);
+      z-index: 10;
+      transform: translate(0, -50%);
+      animation: animPipelock1 4s infinite;
+      &.pipelock2{
+        top: 50%;
+        left: calc(50% - 20px);
+        transform: translate(-100%, -50%) rotate(200deg);
+        animation: animPipelock2 4s infinite;
+      }
+    }
+  }
+  &__counter{
+    font-size: 30px;
+    text-align: center;
+  }
+  &__bottom{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes animPipelock1 {
+  0% {transform: translate(0, -50%)}
+  50% {transform: translate(0, -50%) rotate(10deg)}
+}
+
+@keyframes animPipelock2 {
+  0% {transform: translate(-100%, -50%) rotate(200deg)}
+  50% {transform: translate(-100%, -50%) rotate(210deg);}
+}
+

@@ -1,0 +1,17 @@
+.runes{
+  display: flex;
+  width: 400px;
+  flex-wrap: wrap;
+
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  &__item{
+    cursor: pointer;
+    flex: 0 1 33%;
+    padding: 10px;
+    &.active{
+      filter: drop-shadow(5px 5px 20px rgba(146, 140, 125, 0.7));
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.header__wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.gameCard__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 20px -20px 0 0;
+  .card{
+    margin-top: 40px;
+  }
+}

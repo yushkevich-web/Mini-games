@@ -1,0 +1,63 @@
+.card{
+  // background: linear-gradient(104.19deg, #282C32 1.05%, rgba(40, 44, 50, 0) 100.07%);
+  background: #212429;
+  border: 2px solid #33373F;
+  border-radius: 20px;
+
+  padding: 40px 40px 0 30px;
+  margin-right: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 1 0 30%;
+
+  position: relative;
+  cursor: pointer;
+  &:hover{
+    background: linear-gradient(130deg, #282B31 0%, #212429 100.07%);
+    .card__btn{
+      color: #96A9CD;
+      background: #30343A;
+      border: 2px solid #96A9CD;
+    }
+  }
+  &__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title{
+    font-family: 'Neue Machina';
+    font-size: 48px;
+  }
+  &__tool{
+    padding: 10px 20px;
+    border: 1px solid #5C6573;
+    border-radius: 10px;
+  }
+  &__img{
+    max-width: 280px;
+    margin-top: 65px;
+    display: block;
+  }
+  &__btn{
+    position: absolute;
+    bottom: 10px; right: 10px;
+    padding: 15px 30px;
+    border-radius: 20px;
+    
+    background: #33373F;
+    color: #4D535C;
+    border: 2px solid #33373F;
+    
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: .01em;
+    transition: all .3s ease;
+  }
+}
+
+.test{
+  display: flex;
+}

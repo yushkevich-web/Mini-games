@@ -1,0 +1,57 @@
+.chicken{
+  &__wrapper{
+    .todo__subtitle{
+      width: 50%;
+    }
+  }
+  &__board{
+    text-align: center;
+    border-radius: 10px;
+    width: 445px;
+    height: 550px;
+    margin: 0 auto;
+  }
+  &__pictures{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__board{
+    // background-image: url(../../assets/img/buck.png);
+    // @include bg-center;
+    position: relative;
+    padding-top: 30px;
+    &-bg{
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+    }
+    & > div{
+      z-index: 2;
+      position: inherit;
+      &:nth-child(1){
+        width: 328px;
+        height: 153px;
+        margin: 0 auto;
+        background-image: url(images/chik-place-1.png);
+        // @include bg-center;
+      }
+      &:nth-child(2){
+        width: 279px;
+        height: 131px;
+        margin: 0 auto;
+        background-image: url(images/chik-place-2.png);
+        // @include bg-center;
+      }
+      &:nth-child(3){
+        width: 351px;
+        height: 171px;
+        margin: 0 auto;
+        background-image: url(images/chik-place-3.png);
+        // @include bg-center;
+      }
+    }
+  }
+}

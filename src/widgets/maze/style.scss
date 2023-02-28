@@ -1,0 +1,49 @@
+.mazeWrapper{
+  padding-top: 50px;
+  margin: 0 auto;
+  width: fit-content
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.box {
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+  margin: 3px;
+  background-color: #2b2b2b;
+}
+
+.wall {
+  background-color: rgba(132, 16, 116, 0);
+}
+.passed {
+  background: #18241b;
+}
+.exit{
+  background: #FF3434;
+}
+.entry{
+  background: #55B14C;
+}
+
+.selected {
+  animation-name: selectedColor;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes selectedColor {
+  0% {
+    background-color: #55B14C;
+  }
+  50% {
+    background-color: #54b14c80;
+  }
+  100% {
+    background-color: #55B14C;
+  }
+}
